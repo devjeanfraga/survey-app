@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+:root {
+
+  --font-family-proxima-nova: 'Proxima Nova', sans-serif;
+
+  /* Weight */
+  --light: 300;
+  --regular: 400;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+
+  /* Size Mobile*/
+  --label: 16px;
+  --paragraph: 20px;
+  --subtitles: 16px;
+  --titles: 20px;
+  --subheadeline: 30px;
+  --highlight: 76px;
+  --headline: 68px;
+  --headline-2: 64px;
+  --headline-3: 60px;
+
+  /*colors*/
+  --black: #000000;
+  --white: #ffffff;
+
+  --neutros-100: #BEC3C7;
+  --neutros-200: #9FA6AC;
+  --neutros-300: #737E86;
+  --neutros-400: #58656F;
+  --neutros-500: #2E3E4B;
+  --neutros-600: #2A3844;
+  --neutros-700: #212C35;
+  --neutros-800: #192229;
+  --neutros-900: #131A20;
+
+  --warning-100: #F5E5AB;
+  --warning-200: #F1D984;
+  --warning-300: #EED16D;
+  --warning-400: #EAC648;
+  --warning-500: #D5B442;
+
+  --success-100: #A0DABB;
+  --success-200: #79CB9E;
+  --success-300: #3FB474;
+  --success-400: #18A558;
+  --success-500: #11733E;
+  --success-600: #11733E;
+
+  --danger-100: #F8CBCB;
+  --danger-200: #F4B2B2;
+  --danger-300: #EF8F8F;
+  --danger-400: #EC7979;
+  --danger-500: #E75858;
+  --danger-600: #D25050;
+  --danger-700: #A43E3E;
+  --danger-800: #7F3030;
+  --danger-900: #612525;
+
+  --blue-light: #E6F6FE;
+  --blue-light-hover: #D9F1FD;
+  --blue-light-active: #B0E2FB;
+  --blue-normal: #00A1F1;
+  --blue-normal-hover: #0091D9;
+  --blue-normal-active: #0081C1;
+  --blue-dark: #00A1F1;
+  --blue-dark-hover: #006191;
+  --blue-dark-active: #00486C;
+
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  color: var(--neutros-500);
+  scroll-behavior: smooth;
+}
+
+
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/proximanova_light.otf') format(opentype);
+  font-weight: 300;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/proximanova_regular.ttf') format(truetype);
+  font-weight: 400;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/proximanova_bold.otf') format(opentype);
+  font-weight: 700;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/proximanova_extrabold.otf') format(opentype);
+  font-weight: 800;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/proximanova_black.otf') format(opentype);
+  font-weight: 900;
+  font-style: normal;
+} 
