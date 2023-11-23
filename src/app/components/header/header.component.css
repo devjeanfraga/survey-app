@@ -1,0 +1,41 @@
+.header-container {
+  display: grid;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+  grid-template-columns: 2fr 4fr;
+  height: max-content;
+  max-height: 150px;
+  /* justify-items: center; */
+  box-shadow:
+      0px 1.1px 2.2px rgba(0, 0, 0, 0.02),
+      0px 2.7px 5.3px rgba(0, 0, 0, 0.028),
+      0px 5px 10px rgba(0, 0, 0, 0.035),
+      0px 8.9px 17.9px rgba(0, 0, 0, 0.042),
+      0px 16.7px 33.4px rgba(0, 0, 0, 0.05),
+      0px 35px 80px rgba(0, 0, 0, 0.07);
+}
+
+.header-container .logo-container {
+  width: 100%;
+}
+
+.header-container img {
+  width: 200px;
+}
+
+.header-container .nav-container {
+  /* border: 2px solid black; */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.header-container .nav-container .nav-links {
+  display:  none;
+}
+
+
+
+.nav-container img { width: 44px;}
