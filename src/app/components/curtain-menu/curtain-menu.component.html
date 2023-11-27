@@ -1,0 +1,9 @@
+    <div id="curtain-menu"  [ngClass]=" !isOpen ? 'curtain-overlay':'curtain-overlay active'">    
+      <a class="close-icon" (click)="closeMenu()" ></a>
+    
+      <div class="curtain-overlay_content">
+        <a href="#" *ngFor="let item of dataLinks" (click)="closeMenu()">{{item}}</a>
+        <!-- <p> button </p> -->
+      </div>
+    
+    </div>
