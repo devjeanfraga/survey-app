@@ -1,0 +1,135 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+  max-width: 1400px;
+  gap: 10px;
+}
+
+.text-container {
+  width: 100%;
+  padding: 12px;
+  justify-self: center;
+  /* border: solid 1px black; */
+}
+
+h1 {
+  line-height: 36px;
+  font-size: var(--highlight-mobile);
+  color: var(--black);
+  font-weight: var(--ultra-bold);
+  margin: 12px 0;
+}
+
+p {
+  font-size: var(--subhead-mobile);
+  font-weight: var(--regular);
+  color: var(--black);
+}
+
+.hero img {
+  width: 90%;
+  max-width: 228px;
+  /* border: solid 1px black; */
+  justify-content: start;
+}
+
+/* Tablet Portrait */
+@media (min-width: 660px) { 
+  .hero {
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 32px;
+  }
+
+  .text-container {
+    width: 45%;
+    width: max-content;
+    max-width: 574px;
+  }
+
+  h1 {
+  line-height: 36px;
+  font-size: var(--headline-tablet);
+  color: var(--black);
+  margin: 12px 0;
+  }
+
+  p {
+    font-size: var(--subhead-tablet);
+    color: var(--black);
+    max-width: 570px;
+  }
+}
+
+/* Tablet Land Scape */
+@media (min-width: 900px) { 
+  .hero {
+    justify-content: center;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: none;
+    margin-right: 90px;
+  }
+
+  h1 {
+    line-height: 40px;
+    width: 100%;
+    font-size: var(--subhead-desktop);
+    color: var(--black);
+    margin: 12px 0;
+  }
+
+  p {
+    font-size: var(--subhead-tablet);
+    color: var(--black);
+  }
+
+  .hero img {
+    max-width: 260px;
+    position: relative;
+    right: 60px;
+  }
+
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) { 
+  .hero {
+    justify-content: center;
+    padding: 0 42px;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: none;
+    padding-left: 8rem;
+    margin-right: 90px;
+  }
+
+  h1 {
+    line-height: 68px;
+    width: 100%;
+    font-size: 64px;
+    font-weight: var(--extra-bold);
+    color: var(--black);
+    margin: 12px 0;
+  }
+
+  p {
+    font-size: var(--subhead-tablet);
+    color: var(--black);
+  }
+
+  .hero img {
+    max-width: 254px;
+    right: 12rem;
+  }
+
+}
