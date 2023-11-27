@@ -12,18 +12,25 @@
   --extra-bold: 800;
   --black: 900;
 
-  /* Size Mobile*/
-  --label: 16px;
-  --paragraph: 20px;
-  --subtitles: 16px;
-  --titles: 20px;
-  --subheadeline: 30px;
-  --highlight: 76px;
-  --headline: 68px;
-  --headline-2: 64px;
-  --headline-3: 60px;
+  /* FONT SIZE */
 
-  /*colors*/
+  /* mobile */
+  --headline-mobile: 24px;   
+  --subhead-mobile: 20px;   
+  --paragraph-mobile: 12px; 
+  --highlight-mobile: 40px;   
+
+  /* tablet */
+  --headline-tablet: 32px;   
+  --subhead-tablet: 24px;   
+  --paragraph-tablet: 16px;    
+
+  /* desktop */
+  --headline-desktop: 48px;  
+  --subhead-desktop: 36px;  
+  --paragraph-desktop: 20px;   
+
+  /*COLORS*/
   --black: #000000;
   --white: #ffffff;
 
@@ -60,16 +67,24 @@
   --danger-800: #7F3030;
   --danger-900: #612525;
 
-  --blue-light: #E6F6FE;
+  --blue-light: #E6F6FE; 
   --blue-light-hover: #D9F1FD;
   --blue-light-active: #B0E2FB;
-  --blue-normal: #00A1F1;
+  --blue-normal: #0396C4;
   --blue-normal-hover: #0091D9;
   --blue-normal-active: #0081C1;
   --blue-dark: #00A1F1;
   --blue-dark-hover: #006191;
   --blue-dark-active: #00486C;
 
+
+  /*
+    --forMobile: 599px;
+    --forTabletPortrait: 600px;
+    --forTabletLandScape:  900px;
+    --forDesktop: 1200px;
+    --forBigDesktop: 1800px; 
+  */
 }
 
 *,
@@ -78,14 +93,16 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--font-family-proxima-nova);
+  /* color: var(--neutros-600); */
 }
 
-html {
+html, body {
   font-size: 10px;
-  color: var(--neutros-500);
   scroll-behavior: smooth;
 }
 
+a {text-decoration: none;}
 
 
 @font-face {
