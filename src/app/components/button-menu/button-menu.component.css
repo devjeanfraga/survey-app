@@ -1,0 +1,21 @@
+.button-menu {
+  width: max-content;
+  height: max-content;
+}
+
+.bar {
+  width: 48px;
+  height: 6px;
+  margin: 8px;
+  background-color: var(--neutros-600);
+  transition: all 0.3s ease-in-out;
+}
+
+.bar.active { background-color: var(--blue-normal);}
+
+/* forTabletPortrait */
+@media (min-width: 660px) {
+  .button-menu {
+    display: none;
+  }
+}
