@@ -5,14 +5,10 @@
 
   <div class="nav-container">
     <div class="nav-links">    
-      <p class="nav-link">Funcionamento</p>
-      <p class="nav-link">Vantagens</p>
-      <p class="nav-link">Entrar</p>
-      <p> button</p>
+      <p class="nav-link" *ngFor="let link of dataLinks">{{link}}</p>
+      <app-link-button text="Inscreva-se" to="#"></app-link-button>
     </div>
-   
-    <img src="../../../assets/images/menu-burger.svg" alt="menu-icon" class="menu-icon" >
-
+    <app-button-menu (click)="toggleCurtainMenu()"/>
   </div>
-  
+  <app-curtain-menu [isOpen]="isOpeCurtainMenu" (close)="toggleCurtainMenu()"/>
 </header>
