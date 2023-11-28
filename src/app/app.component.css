@@ -4,4 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  min-width: 320px;
+  max-width: 1400px;
+}
+
+.app-container .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem auto;
 }
