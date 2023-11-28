@@ -35,6 +35,8 @@
 
 .nav-container .nav-links {
   display:  none;
+  color: var(--black);
+
 }
 
 

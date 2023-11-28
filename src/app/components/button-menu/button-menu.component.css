@@ -11,7 +11,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.bar.active { background-color: var(--blue-normal);}
+.bar.active { background-color: var(--black);}
 
 /* forTabletPortrait */
 @media (min-width: 660px) {
