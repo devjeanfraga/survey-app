@@ -1,12 +1,24 @@
 <header class="header-container">
-  <div class="logo-container">
+  <div 
+    class="logo-container" 
+    routerLink="/home" 
+    routerLinkActive="page" 
+    ariaCurrentWhenActive="page"
+  >
     <img src="../../../assets/images/logo.png" alt="logo-survey-app" />
   </div>
 
   <div class="nav-container">
     <div class="nav-links">    
-      <p class="nav-link" *ngFor="let link of dataLinks">{{link}}</p>
-      <app-link-button text="Inscreva-se" to="#"></app-link-button>
+      <p 
+        class="nav-link" 
+        *ngFor="let data of dataLinks" 
+        routerLink={{data.link}} 
+        routerLinkActive="page" 
+        ariaCurrentWhenActive="page"
+      > {{data.name}}</p>
+
+      <app-sign-up-button text="Inscreva-se" to="/sign-up"></app-sign-up-button>
     </div>
     <app-button-menu (click)="toggleCurtainMenu()"/>
   </div>

@@ -1,4 +1,4 @@
-.link-button {
+.sign-up-button {
   height: 40px;
   width: max-content;
   align-items: center;
@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.link-button:hover {
+.sign-up-button:hover {
   background-color: var(--blue-dark);
 }
 
