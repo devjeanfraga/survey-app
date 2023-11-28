@@ -1,14 +1,23 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
 import { ButtonMenuComponent } from '../button-menu/button-menu.component';
 import { CurtainMenuComponent } from '../curtain-menu/curtain-menu.component';
 import { dataHeaderMenuLinks, DataHeaderMenuLinks } from '../../../data/data-header-menu-links';
-import { ButtonComponent } from '../link-button/link-button.component';
+import { SignUpButtonComponent } from '../sign-up-button/sign-up-button.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, ButtonMenuComponent, CurtainMenuComponent, ButtonComponent],
+  imports: [
+    CommonModule, 
+    ButtonMenuComponent, 
+    CurtainMenuComponent, 
+    SignUpButtonComponent,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

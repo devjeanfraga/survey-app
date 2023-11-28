@@ -10,13 +10,11 @@
 
   <div class="nav-container">
     <div class="nav-links">    
-      <p 
+      <a 
         class="nav-link" 
         *ngFor="let data of dataLinks" 
-        routerLink={{data.link}} 
-        routerLinkActive="page" 
-        ariaCurrentWhenActive="page"
-      > {{data.name}}</p>
+        href={{data.link}}
+      > {{data.name}}</a>
 
       <app-sign-up-button text="Inscreva-se" to="/sign-up"></app-sign-up-button>
     </div>

@@ -50,6 +50,7 @@
   }
 
   .nav-link {
+    color: var(--black);
     font-size: var(--paragraph-tablet);
     transition: 0.3s linear;
   }
