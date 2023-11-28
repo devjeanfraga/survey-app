@@ -19,6 +19,8 @@
 }
 
 .header-container .logo-container {
+  align-self: center;
+  justify-self: center;
   width: 100%;
 }
 

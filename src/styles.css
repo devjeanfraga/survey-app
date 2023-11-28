@@ -17,7 +17,7 @@
   /* mobile */
   --headline-mobile: 24px;   
   --subhead-mobile: 20px;   
-  --paragraph-mobile: 12px; 
+  --paragraph-mobile: 14px; 
   --highlight-mobile: 40px;   
 
   /* tablet */
@@ -33,6 +33,8 @@
   /*COLORS*/
   --black: #000000;
   --white: #ffffff;
+  --white-ice-100: #EBEBEB;
+  --white-ice-200: #E7E7E7;
 
   --neutros-100: #BEC3C7;
   --neutros-200: #9FA6AC;
