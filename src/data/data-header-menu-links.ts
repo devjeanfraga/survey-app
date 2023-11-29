@@ -6,5 +6,5 @@ export interface DataHeaderMenuLinks {
 export const dataHeaderMenuLinks: DataHeaderMenuLinks[] = [
   {name: "Funcionamento", link: "#funcionamento"},
   {name: "Vantagens", link: "#vantagens"},
-  {name: "Entrar", link: "/login"}
+  {name: "Entrar", link: "/log-in"}
 ];
