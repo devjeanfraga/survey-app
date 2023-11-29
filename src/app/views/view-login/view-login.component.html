@@ -1,0 +1,21 @@
+<div class="view-login">
+  <div class="hero-login">
+    <img src="../../../assets/images/ilustration-5.png" alt="hero-image">
+  </div>
+  <div class="account-container">
+    <div class="tab-container">
+      <div class="tab-text-content">
+        <a  class="tab" (click)="onLogin()">Log in</a>
+        <a  class="tab"(click)="onSignUp()">Cadastrar</a>
+      </div>
+      <a href="" class="btn-close">X</a>
+    </div>
+    <div *ngIf="isSignUp else loginTemplate">
+      <app-signup></app-signup>
+    </div>
+
+    <ng-template #loginTemplate>
+      <app-login></app-login>
+    </ng-template>
+  </div>
+</div>
