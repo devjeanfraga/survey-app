@@ -8,10 +8,10 @@
         <a  class="tab" (click)="onLogin()">Log in</a>
         <a  class="tab"(click)="onSignUp()">Cadastrar</a>
       </div>
-      <a href="" class="btn-close">X</a>
+      <a href="/" class="btn-close">X</a>
     </div>
     <div *ngIf="isSignUp else loginTemplate">
-      <app-signup></app-signup>
+      <app-signup (toggleToLogin)="onLogin()"></app-signup>
     </div>
 
     <ng-template #loginTemplate>

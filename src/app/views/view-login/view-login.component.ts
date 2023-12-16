@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from '../../components/login/login.component';
 import { SignupComponent } from '../../components/signup/signup.component';
+import { AccountService } from '../../services/account.service';
 
 @Component({
   selector: 'app-view-login',
@@ -11,8 +12,7 @@ import { SignupComponent } from '../../components/signup/signup.component';
   styleUrl: './view-login.component.css'
 })
 export class ViewLoginComponent {
-  isSignUp: boolean = true;
-
+  isSignUp: boolean = true;  
   onLogin () {
     this.isSignUp = false; 
     console.log("login: ", this.isSignUp)

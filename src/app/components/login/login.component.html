@@ -1,5 +1,5 @@
 <div id="login-page">
-  <form class="login">
+  <form class="login" [formGroup]="loginForm">
     <h1>Entrar</h1>
     <div class="social-media-container">
       <a href="" class="icon-link"><img src="../../../assets/images/apple-icon.svg" alt=""></a>
@@ -8,13 +8,13 @@
 
     <p>Ou entre com um e-mail</p>
     <div class="input-wrapper"> 
-      <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+      <input type="email" name="email" id="email" placeholder="Digite seu e-mail" formControlName="email">
     </div>
 
     <div class="input-wrapper"> 
-      <input type="password" name="password" id="password" placeholder="Digite uma senha">
+      <input type="password" name="password" id="password" placeholder="Digite uma senha" formControlName="password">
     </div>
   </form>
 
-  <button type="submit" class="btn-submit" > Entrar </button>
+  <button type="submit" class="btn-submit" (click)="login()"> Entrar </button>
 </div>
